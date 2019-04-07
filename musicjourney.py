@@ -66,7 +66,7 @@ def Tagger(Ti, Ar, Al, Nu): # --------------------------------------------------
   # --> year when we know how to export it (exportify doesn't do this stuff)
   file.tag.save()
   filename = "{0} - {1}.mp3".format(file.tag.artist, file.tag.title)
-  path     = os.path.join(os.getenv("HOME"),"MagicJourney")
+  path     = os.path.join(os.getenv("HOME"),"MusicJourney")
   #os.rename('newsong.mp3', filename)
 
   if not os.path.isdir(path):
@@ -114,7 +114,7 @@ def DownLink(csvname): # -------------------------------------------------------
       print('   An error occurred :( sorry.')
 
   print('\nPlaylist ' + csvname + ' finished.')
-  print('Songs stored at:',os.path.join(os.getenv("HOME"),"MagicJourney"),'.')
+  print('Songs stored at:',os.path.join(os.getenv("HOME"),"MusicJourney"),'.')
 
 ################################################################################
 
